@@ -1,0 +1,23 @@
+@import "../colors";
+
+.failed_payment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .alarm_container {
+    margin-bottom: 5rem;
+    text-align: center;
+    svg {
+      width: 10rem;
+    }
+    p {
+      font-size: 2rem;
+      font-weight: 500;
+      color: $purple;
+    }
+  }
+  .local_style {
+    width: 15rem;
+  }
+}

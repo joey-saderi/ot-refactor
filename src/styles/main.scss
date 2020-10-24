@@ -1,0 +1,639 @@
+@import "./units";
+@import "./colors";
+@import "./font";
+
+html {
+  direction: rtl;
+  font-size: $font_size;
+  font-family: $font_family_Farsi_Number;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: normal;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  color: $dark_gray;
+}
+footer,
+header {
+  margin: 0;
+  border: 0;
+  font-weight: normal;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  line-height: 2;
+  margin: 0.6rem auto;
+}
+p {
+  line-height: 1.5;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  background-color: $white;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+// a
+a {
+  color: $white;
+  text-decoration: none;
+}
+
+// strong
+strong {
+  font-weight: bold;
+}
+
+// MAIN
+main {
+  padding-bottom: 2.4rem;
+}
+
+// INPUT
+input {
+  box-sizing: border-box;
+  margin: 0.8em auto;
+}
+
+.input_Error {
+  border: 1px solid #e0b4b4 !important;
+  background: rgb(255, 246, 246) !important;
+}
+
+// Button
+
+.Blue_BTN {
+  color: #fff;
+  font-family: inherit;
+  background-color: $blue;
+  line-height: 1.6;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 4px;
+  border: none;
+  padding: 0.8rem 2.1rem;
+  border: 1px solid $blue; 
+  transition: 0.25s all;
+  cursor: pointer;
+  &:hover {
+    background-color: $link_hover;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+// Load more
+.Load_more_car {
+  border: 1px solid #dadada;
+  position: relative;
+  width: 25rem;
+  color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  margin: auto;
+  display: block;
+  margin-top: 1rem;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 500;
+  border-radius: 20px;
+  padding: 1.3rem 1rem;
+  svg {
+    width: 1.8rem;
+    display: inline-block;
+    right: 1.5rem;
+    top: 1.3rem;
+    position: absolute;
+  }
+}
+.no_padding {
+  padding: 1rem;
+}
+// CONFIRM and CANCEL
+.confirm {
+  color: $blue;
+  font-weight: bold;
+  cursor: pointer;
+  &::selection {
+    background-color: transparent;
+  }
+}
+.cancel {
+  color: $more_gray;
+  cursor: pointer;
+  &::selection {
+    background-color: transparent;
+  }
+}
+
+// ERROR
+.inputError {
+  border: 1px solid #d83030 !important;
+  background: rgba(216, 48, 48, 0.1) !important;
+}
+
+.Error_message_text {
+  color: $Error_text_color;
+  font-weight: 500;
+  line-height: 2;
+  font-size: 1.2rem;
+}
+
+// SHARE STYLE
+.insuranceBox {
+  p {
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+  width: 25rem;
+  margin: auto;
+  display: block;
+  padding: 1rem;
+  margin-top: -3rem;
+  background: #fff;
+  text-align: center;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  position: relative;
+  z-index: 2;
+}
+.second_container {
+  box-shadow: $box_shadow;
+  background-color: #fff;
+  margin-top: -6.3rem;
+  padding-top: 6rem;
+  padding-bottom: 1.5rem;
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.6rem;
+  }
+  p {
+    font-size: 1.4rem;
+    text-align: justify;
+  }
+  .full_width {
+    text-align: right;
+    margin-bottom: 2.4rem;
+  }
+  .three_columns {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 2.4rem;
+    section {
+      width: 30%;
+      text-align: justify;
+    }
+  }
+  .add_car_section {
+    margin-bottom: 2.4rem;
+    text-align: center;
+    a {
+      color: $blue;
+      font-size: 1.4rem;
+      display: block;
+    }
+    .add_car_custom {
+      display: inline-block;
+      padding: 1.1rem 3.1rem;
+      color: #fff;
+      margin-bottom: 1rem;
+      background: $purple;
+      border: 1px solid $purple; 
+    }
+    .call_us {
+      text-align: center;
+      font-weight: 500;
+      .TellPhone {
+        display: inline-block;
+      }
+    }
+  }
+  @media (max-width: 720px) {
+    .three_columns {
+      display: block;
+      section {
+        width: 100%;
+      }
+    }
+  }
+}
+
+// PWA Styles
+
+.pwa_invitation_banner {
+  padding: 0.5rem 1.5rem;
+  display: none;
+  box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.25);
+  .pwa_content {
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: #fff;
+    img {
+      border-radius: 1rem;
+      width: 3.6rem;
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 1rem;
+    }
+  }
+  .close_pwa_invitation {
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: #fff;
+    border-radius: 2rem;
+    padding: 0.3rem 0.5rem 0.3rem 1rem;
+    svg {
+      width: 2rem;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+  @media (max-width: 720px) {
+    // position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 999;
+    background: #313131;
+  }
+}
+
+// Captcha Badge
+.grecaptcha-badge {
+  display: none !important;
+}
+
+// temporary_score
+.temporary_score {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.Error_color {
+  color: $Error_text_color;
+}
+
+// Responsive
+.minHeight {
+  min-height: 50rem;
+}
+
+.responsive {
+  max-width: 114rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media (max-width: 1200px) {
+    max-width: 96rem;
+  }
+  @media (max-width: 1024px) {
+    max-width: 100%;
+  }
+}
+
+// 404 page
+._404PageImage {
+  display: block;
+  padding-top: $padding_top;
+  margin: auto;
+  @media (max-width: 720px) {
+    width: 100%;
+  }
+}
+._404PageAnchor {
+  text-align: center;
+  display: block;
+  width: 18rem;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+// 500 Page
+._500container {
+  position: relative;
+  span {
+    display: block;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+  p {
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.4rem;
+    a {
+      color: $blue;
+    }
+  }
+}
+
+.Calendar__day.-rtl.-selectedBetween {
+  background: #038ed21c !important;
+}
+
+// Gradient Loader and animation
+
+.Gradient {
+  transition: 0.25s all;
+  background: linear-gradient(90deg, #f1f1f1, #f1f1f1, #e9e9e9, #f1f1f1);
+  background-size: 200% 200%;
+  animation: Gradient 2s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+// Fade In and Out Animation
+.FadeInOutAnimation {
+  opacity: 1;
+  animation: Fade 2s ease infinite;
+}
+
+@-webkit-keyframes Fade {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes Fade {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes Fade {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+// 3rd parties
+// @import "react-modern-calendar-datepicker/lib/DatePicker.css";
+// @import "nouislider/distribute/nouislider.css";
+
+// Pages
+@import "./pages/index.scss";
+@import "./pages/Failed_payment.scss";
+@import "./pages/faq.scss";
+@import "./pages/join-us.scss";
+@import "./pages/otoli.scss";
+@import "./pages/search_result.scss";
+@import "./pages/static_pages.scss";
+@import "./pages/Success_payment.scss";
+
+// Components
+// Form
+@import "../components/form/Dropdown/DropDown.scss";
+@import "../components/form/Checkbox/Checkbox.scss";
+@import "../components/form/Radio/radio.scss";
+@import "../components/form/NumberSeparatedTextInput/NumberSeparatedTextInput.scss";
+@import "../components/form/TextInput/inputStyle.scss";
+@import "../components/form/Button/Button.scss";
+@import "../components/Accordion/Accordion.scss";
+
+// component
+@import "../components/cartPlaceholder/CarLoading/car_cart.scss";
+// Place holders
+@import "../components/cartPlaceholder/carPageLoading/carPageLoading.scss";
+@import "../components/cartPlaceholder/CarLoadingProfile/profile_car_cart.scss";
+@import "../components/cartPlaceholder/checkoutLoading/checkoutLoading.scss";
+@import "../components/cartPlaceholder/requestLoading/requestLoading.scss";
+@import "../components/cartPlaceholder/checkBoxLoading/checkBoxLoading.scss";
+
+@import "../components/Counter/Counter.scss";
+@import "../components/Footer/footer.scss";
+@import "../components/ImageUploader/ImageUploader.scss";
+@import "../components/pelak/pelak.scss";
+@import "../components/PleaseLogin/please_login.scss";
+@import "../components/Slider/slider.scss";
+@import "../components/Slider/Gallery/Gallery.scss";
+@import "../components/Spinner/spinner.scss";
+@import "../components/TabCreator/TabCreator.scss";
+@import "../components/Toast/toast.scss";
+
+// Containers
+@import "../containers/Add_car/Add_car.scss";
+@import "../containers/Add_car/step_1/step_1.scss";
+@import "../containers/car/carpage/carpage.scss";
+@import "../containers/car/search-result/search_result.scss";
+@import "../containers/car/search-result/car/car.scss";
+@import "../containers/Checkout_Container/checkout.scss";
+@import "../containers/Checkout_Container/insurance/insurance.scss";
+@import "../containers/CompleteRegister/complete_register.scss";
+@import "../containers/Filters/Filter.scss";
+// Header
+@import "../containers/header/header.scss";
+// Modals
+@import "../containers/header/modals/modal.scss";
+@import "../containers/header/modals/GetUserCellPhone/userCellphone.scss";
+@import "../containers/header/modals/Law/Law.scss";
+@import "../containers/header/modals/Owner/Owner.scss";
+@import "../containers/header/modals/Renter/Renter.scss";
+@import "../containers/header/modals/Tell_me/Tell_me.scss";
+@import "../containers/header/modals/ConfirmDelete/Confirm_delete.scss";
+@import "../containers/header/modals/Assurance/Assurance_modal.scss";
+
+@import "../containers/LandignPageContainer/Search_result.scss";
+@import "../containers/LandignPageContainer/landingPageContent/landingPageContent.scss";
+@import "../containers/Profile_container/Profile_container.scss";
+@import "../containers/Profile_container/Profile_Cars/profile_car.scss";
+@import "../containers/Profile_container/Profile_Cars/car/car.scss";
+@import "../containers/Profile_container/Profile_info/profile_info.scss";
+@import "../containers/Profile_container/Profile_info/Edit_profile/edit_profile.scss";
+@import "../containers/Request_page/Requests_page.scss";
+@import "../containers/Request_page/request_cart/request_cart.scss";
+@import "../containers/Requests_page/Requests_page.scss";
+@import "../containers/Requests_page/request_cart/request_cart.scss";
+@import "../containers/Search/search.scss";
+@import "../containers/Search_result/Search_result.scss";
+@import "../containers/Set_car_timing/set_car.scss";
+@import "../containers/Set_car_timing/step_2/step_2.scss";
+@import "../containers/Set_car_timing/PriceBox/PriceBox.scss";
+@import "../containers/Set_car_timing/DiscountBox/DiscountBox.scss";

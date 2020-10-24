@@ -1,0 +1,47 @@
+@import "../../styles/colors";
+.toast_container {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  z-index: 100;
+  .toast_div {
+    max-width: 55rem;
+    margin: auto;
+    background-color: $back_ground_color;
+    box-shadow: $box_shadow;
+    border-radius: 4px 4px 0 0;
+    .time_bar {
+      display: block;
+      border-radius: 4px 4px 0 0;
+      height: 0.5rem;
+      width: 0;
+      background-color: $progress_bar_color;
+      animation: progressBar 1s linear 0.5s forwards;
+    }
+    svg {
+      cursor: pointer;
+      padding: 0.5rem 1.5rem 0;
+      display: block;
+      width: 2rem;
+    }
+    p {
+      padding: 0 1.5rem;
+      margin: auto;
+      min-height: 2rems;
+      text-align: center;
+      color: #fff;
+      font-size: 1.4rem;
+      padding-bottom: 1rem;
+    }
+  }
+}
+
+@keyframes progressBar {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "thousand": "هراز",
+  "million": "میلیون",
+  "next_seo": {
+    "load_title": "خودرو | اتولی",
+    "title": {
+      "otoli": " | اتولی"
+    },
+    "description": "همین حالا اجاره کنید",
+    "site_name": "اتولی",
+    "handle": "@otoli_net",
+    "site": "@otoli_net",
+    "cardType": "summar,y_large_image"
+  },
+  "toman_per_day": "تومان در روز",
+  "calender_section_mobile_view_h2": "تاریخ اجاره",
+  "Rent_date_day": "روز",
+  "change_date_in_car_page_change_date": "تغییر تاریخ",
+  "input_container_label_start_date": "از تاریخ",
+  "input_container_label_end_date": "تا تاریخ",
+
+  "location_for_deliver": "محل خودرو و تحویل",
+  "deliver_at_tehran": "در محدوده تهران، خودرو در محل شما تحویل می‌شود.",
+  "with_driver": "اجاره با راننده",
+  "just_with_drive": "اجاره این خودرو فقط، همراه با راننده امکان‌پذیر است.",
+  "distance_in_day": "محدودیت مسافت",
+  "KM_in_day": " کیلومتر در روز",
+  "extra_price": "هزینه هر کیلومتر اضافه ",
+  "about_car": "درباره خودرو",
+  "features": "مشخصات فنی",
+  "body_style": "نوع بدنه",
+  "gear_box": "گیربکس",
+  "cylinder": "سیلندر",
+  "mile_age": "کارکرد",
+  "capacity": "ظرفیت",
+  "person": "نفر",
+  "facilities": "امکانات",
+  "condition_and_cancellation": "شرایط اجاره و کنسلی",
+  "tag": "برچسب",
+  "extra_info": "هزینه را بعد از پذیرش درخواست توسط مالک خودرو پرداخت خواهید کرد."
+}

@@ -1,0 +1,47 @@
+{
+  "next_seo": {
+    "title": { "start": "اجاره خودرو از ", "otoli": " | اتولی" },
+    "description": " حساب کاربری",
+    "handle": "@otoli_net",
+    "site": "@otoli_net",
+    "cardType": "summary_large_image"
+  },
+  "profile_info": {
+    "edit_the_profile_info": "ویرایش مشخصات کاربری",
+    "exit": "خروج",
+    "add": "+ افزودن خودرو",
+    "edit_profile": {
+      "name_error": "نام یا نام خانوادگی نامعتبر",
+      "user_name_error": "نام کاربری نامعتبر",
+      "company_name_error": "نام شرکت نامعتبر",
+      "change_the_profile_image": "تغییر تصویر کاربری",
+      "incorrect_picture_extension": "لطفاً تصویر را با فرمت jpeg بارگذاری کنید.",
+      "name": "نام",
+      "last_name": "نام خانوادگی",
+      "company_name": "نام شرکت",
+      "create_personal_link": "ایجاد آدرس اختصاصی",
+      "personal_link": "آدرس اختصاصی",
+      "ok": "تایید",
+      "cancel": "لغو"
+    }
+  },
+  "profile_cars": {
+    "all": "همه",
+    "inactive": "غیر فعال",
+    "active": "فعال",
+    "show_more_cars": "نمایش ماشین‌های بیشتر",
+    "car": {
+      "khodro": "خودروی",
+      "nemishe": " شما در نتایج جستجو نمایش داده نخواهد شد.",
+      "mishe": " شما در نتایج جستجو نمایش داده خواهد شد.",
+      "default_image": "تصویر پیش فرض خودرو",
+      "details": "مشاهده مشخصات",
+      "to_show_this_car": "برای نمایش خودرو لازم است ",
+      "rent_condition": "شرایط اجاره",
+      "setting": "خودروتان را تعیین کنید.",
+      "edit_time_date": "تغییر تاریخ و قیمت",
+      "active_the_car": "فعال کردن خودرو",
+      "inactive_the_car": "غیر فعال کردن خودرو"
+    }
+  }
+}

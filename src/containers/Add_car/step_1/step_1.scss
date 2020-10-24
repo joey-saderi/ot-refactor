@@ -1,0 +1,409 @@
+@import "../../../styles/units";
+@import "../../../styles/colors";
+
+.add_car_form_container {
+  max-width: 68rem;
+  .add_car_form_step_1 {
+    margin-top: $padding_top;
+    background: #fdfdfd;
+    border: 1px solid $light_grey;
+    font-size: 1.4rem;
+    border-radius: 4px;
+    padding: 1.6rem;
+    border: none;
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.1);
+    .pageTitle {
+      position: relative;
+      .car_icon {
+        margin: 1rem;
+        margin-right: 0;
+        display: inline-block;
+        vertical-align: middle;
+        width: 3.3rem;
+      }
+      h3 {
+        font-weight: 500;
+        color: $purple;
+        font-size: 1.8rem;
+        margin-top: 0;
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+
+    .DropDown_container,
+    .radio_father,
+    .text_input_container {
+      margin: 0 0 3rem;
+    }
+    .DropDown_container {
+      .input_wrapper {
+        input {
+          height: 5rem;
+        }
+        .ArrowDown {
+          top: 1.6rem;
+        }
+      }
+    }
+    .radio_father {
+      .radio_container {
+        .container {
+          font-weight: 300;
+          .checkmark {
+            border: 1px solid rgba(34, 36, 38, 0.15);
+            &::after {
+              top: 5px;
+              left: 5px;
+            }
+          }
+        }
+      }
+    }
+    .facilities_container {
+      background-color: #fafafa;
+      margin-bottom: 3rem;
+      position: relative;
+      .check_box_container {
+        padding: 1rem;
+        .container {
+          margin-bottom: 2.2rem;
+          font-weight: 400;
+          color: $more_gray;
+        }
+      }
+      .gradient_transparent {
+        height: 13rem;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+        background: rgb(250, 250, 250);
+        background: linear-gradient(
+          0deg,
+          rgba(250, 250, 250, 1) 0%,
+          rgba(250, 250, 250, 0.95) 65%,
+          rgba(255, 255, 255, 0.1) 100%
+        );
+      }
+      .show_partial_facilities {
+        height: 20rem;
+        overflow: hidden;
+      }
+      .show_more_facilities_button {
+        width: 14rem;
+        border: 1px solid $blue;
+        border-radius: 25px;
+        margin: auto;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 3.5rem;
+        margin: auto;
+        cursor: pointer;
+        color: $blue;
+        padding: 0.8rem 3rem 0.8rem 0;
+        svg {
+          width: 2rem;
+          position: absolute;
+          left: 1rem;
+          top: 0.9rem;
+        }
+      }
+    }
+    .extra_text {
+      margin: 0.4rem 0 1.6rem 0;
+      font-size: 1.4rem;
+      color: $more_gray;
+      line-height: 2.7rem;
+    }
+    .form_title {
+      border-bottom: 1px solid;
+      border-bottom: 1px solid $purple;
+      padding-bottom: 1rem;
+      margin-top: 0rem;
+      display: inline-block;
+      padding-left: 1.6rem;
+      margin-bottom: 4em;
+    }
+    .DropDown_container label,
+    label {
+      font-weight: 500;
+      font-size: 1.4rem;
+      margin-bottom: 0.8rem;
+      display: block;
+      span {
+        color: #bfbfbf;
+      }
+    }
+    .add_car_Facilities_label {
+      margin-bottom: 0.8rem;
+    }
+    .Step1_checkoout_placeholder {
+      .CheckBox_Loader_placeHolder {
+        margin-bottom: 2rem !important;
+        display: inline-block;
+      }
+    }
+    .transition_type_Label {
+      display: block;
+      margin-bottom: 0.8rem;
+    }
+    .Car_info_step_1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .DropDown_container {
+        margin: 0 0.8rem 3rem;
+        &:first-child {
+          margin: 0 0rem 3rem 0.8rem;
+        }
+        &:last-child {
+          margin: 0 0.8rem 3rem 0rem;
+        }
+      }
+    }
+    .value_container {
+      position: relative;
+      .input_surround {
+        width: 50%;
+        .clean_icon {
+          display: none;
+        }
+        input {
+          text-align: left;
+          text-indent: 1rem;
+          direction: ltr;
+        }
+      }
+    }
+    .pelak_container {
+      position: relative;
+      margin-bottom: 3rem;
+      .license_palte_container {
+        position: relative;
+        .pelak_input {
+          position: absolute;
+          // display: flex;
+          // justify-content: center;
+          // align-items: center;
+          width: 300px;
+          top: 0;
+          right: 0;
+          .pelak_input_box_controller {
+            position: relative;
+            .Fourth_part_pelak {
+              position: absolute;
+              top: -3px;
+              right: 10px;
+              input {
+                height: 39px;
+                text-align: center;
+              }
+            }
+            .Third_part_pelak {
+              position: absolute;
+              top: -17px;
+              right: 83px;
+              input {
+                padding: 0;
+                text-align: center;
+                height: 51px;
+              }
+            }
+            .Second_part_pelak {
+              position: absolute;
+              top: 4px;
+              right: 144px;
+              width: 5rem;
+              input {
+                height: 51px;
+                text-align: center;
+                font-size: 1.6rem;
+                font-weight: 500;
+              }
+              .resultList {
+                .Items {
+                  padding: 1rem 0;
+                }
+              }
+            }
+            .First_part_pelak {
+              position: absolute;
+              width: 5rem;
+              left: 45px;
+              top: -17px;
+              input {
+                padding: 0;
+                text-align: center;
+                height: 51px;
+              }
+            }
+            .text_input_container {
+              position: absolute;
+              label {
+                color: transparent;
+              }
+              width: 5rem;
+            }
+          }
+        }
+      }
+    }
+    .colorPicker_container {
+      width: 24rem;
+      .DropDown_container {
+        .Locations_list_container {
+          p {
+            font-size: 0;
+          }
+        }
+      }
+    }
+    .step_one_under_label_descripe {
+      margin-bottom: 1.5rem;
+      font-size: 1.4rem;
+      margin-top: 0.8rem;
+      line-height: 2.7rem;
+      color: $more_gray;
+    }
+    .text_area_step_1 {
+      min-height: 15rem;
+      width: 100%;
+      font-family: inherit;
+      margin: 0.3rem auto 3rem;
+      display: block;
+      outline: 0;
+      -webkit-appearance: none;
+      line-height: 2;
+      padding: 0.5rem;
+      font-size: 1.4rem;
+      background: transparent;
+      border: 1px solid $light_grey;
+      color: rgba(0, 0, 0, 0.87);
+      border-radius: 0.4rem;
+      box-shadow: 0 0 0 0 transparent inset;
+      box-sizing: border-box;
+      &:focus {
+        background-color: #fff;
+      }
+    }
+    .local_style {
+      display: block;
+      width: 100%;
+      line-height: 1.5;
+      font-size: 16px;
+      padding: 1.6rem 2.1rem;
+    }
+  }
+}
+
+@media screen and(max-width:720px) {
+  .add_car_form_container {
+    max-width: 68rem;
+    .add_car_form_step_1 {
+      box-shadow: none;
+      padding: 0;
+      background-color: transparent;
+      .DropDown_container,
+      .radio_father,
+      .text_input_container {
+        margin: 0 0 3rem;
+      }
+      .Car_info_step_1 {
+        display: block;
+        .DropDown_container {
+          margin: 0 0rem 3rem !important;
+        }
+      }
+    }
+  }
+}
+
+@media screen and(max-width:575px) {
+  .add_car_form_container {
+    .add_car_form_step_1 {
+      .value_container {
+        .input_surround {
+          width: 17rem;
+        }
+      }
+      .facilities_container {
+        .check_box_container {
+          .container {
+            width: 50%;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and(max-width:480px) {
+  .add_car_form_container {
+    .add_car_form_step_1 {
+      .pelak_container {
+        .license_palte_container {
+          .pelak_input {
+            position: absolute;
+            width: 240px;
+            top: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+            .pelak_input_box_controller {
+              position: relative;
+              .Fourth_part_pelak {
+                top: -7px;
+                right: 8px;
+                input {
+                  height: 30px;
+                  font-size: 1.6rem;
+                }
+              }
+              .Third_part_pelak {
+                top: -19px;
+                right: 65px;
+                input {
+                  height: 42px;
+                  font-size: 1.6rem;
+                }
+              }
+              .Second_part_pelak {
+                top: 2px;
+                right: 112px;
+                width: 5rem;
+                input {
+                  height: 42px;
+                  font-size: 1.6rem;
+                  font-weight: 500;
+                }
+              }
+              .First_part_pelak {
+                width: 5rem;
+                left: 21px;
+                top: -19px;
+                input {
+                  height: 42px;
+                }
+              }
+              .text_input_container {
+                position: absolute;
+                label {
+                  color: transparent;
+                }
+                width: 4rem;
+              }
+            }
+          }
+          img {
+            margin: auto;
+            display: block;
+            height: 52px;
+          }
+        }
+      }
+    }
+  }
+}

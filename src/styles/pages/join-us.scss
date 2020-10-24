@@ -1,0 +1,213 @@
+@import "../colors";
+.join_us {
+  .banner {
+    height: 90vh;
+    background-image: url("/image/parking.jpg");
+    background-position: right center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    h1 {
+      color: #fff;
+      font-size: 4.5rem;
+      font-weight: 900;
+      width: 100%;
+      margin: 0;
+      text-align: center;
+      text-shadow: $text_shadow;
+    }
+    h2 {
+      text-shadow: $text_shadow;
+      font-weight: 300;
+      width: 100%;
+      color: #fff;
+      font-size: 2.1rem;
+      line-height: 1.5;
+      margin: 10px 0px 26px;
+      text-align: center;
+    }
+    .addCarnow {
+      text-align: center;
+      .addCar_bottom_joinus_b {
+        background-color: $purple;
+        border: 1px solid $purple;
+        margin: auto;
+        width: 28rem;
+        display: inline-block;
+        margin-bottom: 1rem;
+        box-shadow: $box_shadow;
+      }
+      p {
+        color: #fff;
+        text-shadow: $text_shadow;
+        font-weight: 500;
+        font-size: 1.4rem;
+      }
+    }
+    .calculator_container {
+      width: 100%;
+      background-color: #fff;
+      border-radius: 0.4rem;
+      padding: 3.2rem;
+      h2 {
+        text-align: right;
+        display: block;
+        text-shadow: none;
+        color: $dark_gray;
+        font-weight: 500;
+      }
+      p {
+        font-size: 1.4rem;
+        text-align: right;
+      }
+      form {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .calculator_dropDown {
+          position: relative;
+          .error_Field {
+            position: absolute;
+            margin-top: 0.3rem;
+            color: $Error_text_color;
+            font-weight: 500;
+            font-size: 1rem;
+          }
+        }
+        .calculator_dropDown,
+        .value_container,
+        .local_Button_joinUs {
+          width: 24%;
+        }
+        .value_container {
+          .text_input_container {
+            .text_input {
+              margin: 0;
+            }
+            .input_error_message {
+              position: absolute;
+              font-weight: 500;
+              font-size: 1rem;
+              bottom: -15px;
+            }
+          }
+          position: relative;
+          span {
+            position: absolute;
+            left: 10px;
+            top: 17px;
+            font-size: 1.2rem;
+          }
+          .clean_icon {
+            left: 38px;
+          }
+        }
+      }
+      .CalculatorResult {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        .eachSvgBox {
+          width: 20rem;
+          margin-top: -2rem;
+          position: relative;
+          h3.CalcH3 {
+            text-align: center;
+            position: absolute;
+            padding-top: 6rem;
+            width: 100%;
+            font-size: 2rem;
+          }
+          p {
+            text-align: center;
+          }
+          .UnderText {
+            text-align: center;
+            margin-top: -2rem;
+          }
+        }
+      }
+      .addCarnowInlanding {
+        margin-top: 3rem;
+        text-align: center;
+        margin-bottom: -2rem;
+        .addCar_top_joinus_a {
+          background-color: $purple;
+          border: 1px solid $purple;
+        }
+      }
+      .tryAgainCalc {
+        text-align: left;
+        color: $blue;
+        font-weight: 500;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media screen and(max-width:1024px) {
+  .join_us {
+    .banner {
+      padding: 3.5rem 1.5rem 6.5rem;
+    }
+  }
+}
+
+@media screen and(max-width:768px) {
+  .join_us {
+    .banner {
+      height: auto;
+      display: block;
+      background-position: left;
+      h1 {
+        margin: 0;
+        font-size: 2.5rem;
+      }
+      h2 {
+        font-size: 1.4rem;
+      }
+      .calculator_container {
+        padding: 1.2rem;
+        form {
+          display: block;
+          .calculator_dropDown {
+            .error_Field {
+              bottom: -14px;
+            }
+          }
+          .calculator_dropDown,
+          .value_container,
+          .local_Button_joinUs {
+            width: 100%;
+            margin-bottom: 2rem;
+          }
+        }
+        .CalculatorResult {
+          flex-direction: column-reverse;
+          .eachSvgBox {
+            margin-top: 1rem;
+            h3.CalcH3 {
+              text-align: center;
+              position: absolute;
+              padding-top: 6rem;
+              width: 100%;
+              font-size: 2rem;
+            }
+            .UnderText {
+              text-align: center;
+              margin-top: -2rem;
+            }
+          }
+        }
+        .addCarnowInlanding {
+          margin-bottom: 2rem;
+        }
+      }
+    }
+  }
+}

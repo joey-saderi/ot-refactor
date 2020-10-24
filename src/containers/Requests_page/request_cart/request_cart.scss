@@ -1,0 +1,246 @@
+@import "../../../styles/colors";
+
+.Request_car {
+  width: 100%;
+  max-width: 55rem;
+  border-radius: 4px;
+  margin: 0 1rem 2rem 0;
+  padding: 0rem;
+  background: #fff;
+  box-shadow: $box_shadow;
+  .rent_status {
+    border: none;
+    background: #e6e6e6;
+    width: auto;
+    border-radius: 4px;
+    text-align: center;
+    padding: 0.5rem 0.5rem 0.5rem 3rem;
+    font-size: 1.2rem;
+    display: inline-block;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+    svg {
+      display: inline-block;
+      margin-left: 1.2rem;
+      vertical-align: middle;
+      width: 1.4rem;
+    }
+    span {
+      font-weight: 500;
+      display: inline-block;
+      color: #656565;
+    }
+  }
+  .cart {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    // margin-top: 1.6rem;
+    padding: 1rem;
+    padding-bottom: 0;
+    .rent_info {
+      width: 70%;
+      h2 {
+        margin-top: 0;
+      }
+      // h3 {
+      //   font-size: 1.4rem;
+      //   margin-top: 0;
+      // }
+      hr {
+        border-width: 0.1rem;
+        margin: 0.5rem 0;
+        border-bottom-width: 0;
+        border-color: transparent;
+        width: 12rem;
+      }
+      p {
+        font-size: 1.4rem;
+        margin-bottom: 1.6rem;
+        span {
+          width: 50%;
+          display: inline-block;
+          font-weight: 500;
+          span {
+            font-weight: normal;
+            font-size: 1.2rem;
+            width: 100%;
+            display: block;
+          }
+        }
+      }
+      .rent_duration {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        svg {
+          margin: 0 2rem;
+        }
+      }
+      .no_of_days {
+        font-weight: 500;
+        font-size: 1.4rem;
+      }
+    }
+    .image_pelak {
+      max-width: 16rem;
+      display: block;
+      max-height: 16rem;
+      margin: 0 auto;
+      figure {
+        img {
+          max-height: 10rem;
+          max-width: 100%;
+          border-radius: 0.4rem;
+          display: block;
+          margin: auto;
+        }
+      }
+      .pelak_view_container {
+        width: 16rem;
+        margin-top: 1rem;
+        img {
+          display: block;
+          margin: auto;
+          width: 100%;
+        }
+        .first {
+          position: absolute;
+          width: auto;
+          left: 26px;
+          top: 6px;
+          font-size: 1.6rem;
+        }
+        .second {
+          position: absolute;
+          top: 8px;
+          right: 88px;
+          line-height: 1.2;
+          font-size: 1.6rem;
+        }
+        .third {
+          position: absolute;
+          top: 6px;
+          right: 49px;
+          font-size: 1.6rem;
+        }
+        .forth {
+          position: absolute;
+          top: 12px;
+          right: 11px;
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+
+  .Role_container {
+    padding: 0rem 1rem 0rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a {
+      color: $blue;
+      font-weight: 500;
+      font-size: 1.4rem;
+      .extra_Text {
+        font-size: 1.2rem;
+        color: #a2a2a2;
+      }
+      svg {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 0.5rem;
+        border-radius: 4px;
+        border: 1px solid $blue;
+        width:2rem
+      }
+    }
+  }
+  .Button_container {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .disable_rate_btn {
+      color: #656565;
+      font-family: inherit;
+      background-color: #e6e6e6;
+    }
+    .request_car_accept {
+      width: 49%;
+    }
+    .request_car_reject {
+      width: 49%;
+      background-color: transparent;
+      border: 1px solid $blue;
+      color: $blue;
+      .Loading {
+        border-right-color: $blue;
+      }
+    }
+    .request_car_pay {
+      width: 100%;
+      display: block;
+    }
+  }
+}
+
+@media screen and(max-width:720px) {
+  .Request_car {
+    margin: 0 auto 2rem;
+  }
+}
+
+@media screen and(max-width:480px) {
+  .Request_car {
+    .Role_container {
+      display: block;
+      a {
+        margin-bottom: 1rem;
+        display: block;
+        .renter_Cell {
+          direction: ltr;
+          text-align: right;
+        }
+      }
+    }
+    .cart {
+      .rent_info {
+        // h3 {
+        //   font-size: 1.2rem;
+        // }
+        p {
+          font-size: 1.2rem;
+        }
+        .rent_duration {
+          svg {
+            margin: 0 0.5rem;
+          }
+        }
+      }
+      .image_pelak {
+        max-width: 14rem;
+        .pelak_view_container {
+          width: 14rem;
+          .first {
+            left: 26px;
+            top: 5px;
+          }
+          .second {
+            top: 6px;
+            right: 72px;
+          }
+          .third {
+            top: 5px;
+            right: 42px;
+          }
+          .forth {
+            top: 9px;
+            right: 9px;
+          }
+        }
+      }
+    }
+  }
+}

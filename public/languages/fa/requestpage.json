@@ -1,0 +1,46 @@
+{
+  "next_seo": {
+    "title": "رزرو‌های من | اتولی",
+    "description": "رزرو‌های من | اتولی",
+    "handle": "@otoli_net",
+    "site": "@otoli_net",
+    "cardType": "summary_large_image"
+  },
+  "request_page": {
+    "request_cart": {
+      "accept": "قبول",
+      "reject": "رد",
+      "pay": "پرداخت",
+      "deliver": "خودرو را تحویل گرفتم",
+      "returned": "خودرو را بازتحویل گرفتم",
+      "review": "ثبت نظر",
+      "rent_duration": "مدت اجاره",
+      "day": "روز",
+      "cost": "هزینه اجاره",
+      "toman": "تومان",
+      "contact_with_renter":":تماس با اجاره گیرنده"
+    },
+    "please_login": {
+      "GetUserCellPhone": {
+        "log_sigh": "ورود/ثبت نام",
+        "cell_phone": "شماره تلفن همراه",
+        "example": "مثال: 09121234567",
+        "error_1": "لطفا تلفن همراه را وارد کنید",
+        "error_2": "شماره همراه باید 11 رقم باشد",
+        "error_3": "شماره وارد شده صحیح نیست",
+        "error_4": "شماره وارد شده صحیح نیست",
+        "send": "ارسال کد ورود"
+      },
+      "ConfirmCode": {
+        "text_input_label": "کد چهار رقمی که به موبایل شما اس‌ام‌اس شده را وارد کنید",
+        "place_holder": "لطفا کد را وارد کنید",
+        "require": "لطفا کد تایید را وارد کنید",
+        "length": "کد تایید باید 4 رقم باشد",
+        "send_again": "ارسال مجدد",
+        "seconds": "ثانیه",
+        "edit_the_number": "ویرایش شماره",
+        "enter": "ورود"
+      }
+    }
+  }
+}

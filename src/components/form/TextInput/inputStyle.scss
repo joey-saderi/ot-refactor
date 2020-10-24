@@ -1,0 +1,79 @@
+@import "../../../styles/colors";
+
+.text_input_container {
+  width: 100%;
+  display: block;
+  // position: relative;
+  .text_input_label {
+    color: $dark_gray;
+    text-align: right;
+    font-family: inherit;
+    font-size: 1.4rem;
+  }
+  .input_surround {
+    display: block;
+    width: 100%;
+    position: relative;
+    .text_input {
+      font-family: inherit;
+      margin: 1rem auto 0;
+      display: block;
+      width: 100%;
+      outline: 0;
+      -webkit-appearance: none;
+      line-height: 1.5;
+      padding: 1rem;
+      font-size: 1.4em;
+      background: #ffffff;
+      border: 1px solid $light_grey;
+      color: rgba(0, 0, 0, 0.87);
+      border-radius: 0.4rem;
+      box-shadow: 0 0 0 0 transparent inset;
+      // &:invalid {
+      //   border: 1px solid #d83030 !important;
+      //   background: rgba(216, 48, 48, 0.1) !important;
+      // }
+      &:focus {
+        background-color: #ffffff;
+      }
+    }
+    .change_direction_onfocus {
+      -moz-appearance: textfield;
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+      direction: ltr;
+      text-align: left;
+    }
+    .clean_icon {
+      position: absolute;
+      left: 10px;
+      bottom: 11px;
+      cursor: pointer;
+      width: 2rem;
+    }
+    .input_tail_content {
+      position: absolute;
+      right: 104%;
+      top: 0;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      color: $more_gray;
+      background-color: $almost_white;
+      padding: 0 1rem;
+      border-radius: 4px 0 0px 4px;
+      white-space: nowrap;
+    }
+    .inputError_forTail {
+      border-color: #d83030;
+      color: #d83030;
+    }
+  }
+  .input_error_message {
+    font-size: 1.2rem;
+    color: $Error_text_color;
+  }
+}

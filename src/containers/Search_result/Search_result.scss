@@ -1,0 +1,208 @@
+@import "../../styles/units";
+@import "../../styles/colors";
+
+.search_result_page_container {
+  .count_bar_container {
+    background: #313131;
+    .count_bar {
+      cursor: pointer;
+      align-items: center;
+      .count_bar_count {
+        font-weight: 500;
+        line-height: 3;
+        font-size: 1.4rem;
+        color: #dcdcdc;
+        display: inline-block;
+      }
+      .change_search_btn {
+        border-radius: 4px;
+        padding: 0.2rem 0.6rem;
+        font-size: 1.2rem;
+        border: 1px solid #dcdcdc;
+        color: #dcdcdc;
+        display: inline-block;
+        cursor: pointer;
+        float: left;
+        margin-top: 0.7rem;
+        .close_text_btn {
+          color: #dcdcdc;
+          display: inline-block;
+          svg {
+            display: inline-block;
+            vertical-align: middle;
+            padding-bottom: 0;
+            padding-right: 0.5rem;
+            width: 2rem;
+          }
+        }
+      }
+    }
+    .count_bar_count_empty {
+      height: 42px;
+    }
+    .new_search_in_landing {
+      background: #313131;
+      padding-bottom: 1rem;
+      display: none;
+      .label {
+        margin-bottom: 0.5rem;
+        margin-bottom: 0.5rem;
+        color: #dcdcdc;
+      }
+      .DropDown_container {
+        .input_wrapper {
+          input {
+            background: #fff;
+          }
+        }
+      }
+    }
+    .show_search_section {
+      display: block;
+    }
+    svg {
+      margin: auto;
+      display: block;
+      cursor: pointer;
+    }
+    .Arrow_up_change_search {
+      padding: 1rem 2rem;
+      width: 2rem;
+    }
+  }
+
+  .price_sort_container {
+    padding: 1.5rem 0;
+    text-align: left;
+    span {
+      cursor: pointer;
+      letter-spacing: -0.05rem;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      color: rgba(0, 0, 0, 0.5);
+      border-right-color: transparent;
+      font-size: 1.2rem;
+      font-weight: 500;
+      padding: 0.8rem 1rem;
+      display: inline-block;
+      &:first-child {
+        border-right-color: rgba(0, 0, 0, 0.08);
+      }
+      &.active {
+        color: rgba(0, 0, 0, 0.9);
+      }
+    }
+    .show_filter {
+      color: #656565;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      display: none;
+      font-size: 1.2rem;
+      padding: 0.4rem 1rem;
+      line-height: 1;
+      float: right;
+    }
+  }
+  .minimal_filters {
+    .minimal_filter_tags {
+      display: inline-block;
+      border-radius: 20px;
+      padding: 0.7rem 1rem;
+      font-weight: normal;
+      margin-left: 1rem;
+      margin-bottom: 1rem;
+      cursor: pointer;
+      background: #e3e3e3;
+      color: #262626;
+      cursor: pointer;
+      svg {
+        display: inline-block;
+        vertical-align: top;
+        padding-left: 0.5rem;
+        width: 1.3rem;
+      }
+    }
+  }
+  .content_container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+  }
+}
+.quick_access_middle_searchResult {
+  display: none;
+  width: 100%;
+  margin: 1rem 0 4rem;
+  h2 {
+    color: $more_gray;
+    margin-top: 0;
+    text-align: right;
+    font-weight: 400;
+    font-size: 1.4rem;
+  }
+  .quick_access_child_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div {
+      cursor: pointer;
+      width: 48%;
+      background: #2cb8c2;
+      border-radius: 4px;
+      padding: 3rem 1rem 2rem 1rem;
+      img {
+        height: 5rem;
+        display: block;
+        margin: auto;
+      }
+      p {
+        padding-top: 0.8rem;
+        color: #fff;
+        text-align: center;
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+
+@media screen and(max-width:960px) {
+  .search_result_page_container {
+    .price_sort_container {
+      .show_filter {
+        display: inline-block;
+        vertical-align: middle;
+        padding: 0.7rem 1rem;
+        cursor: pointer;
+        svg {
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 1rem;
+          width: 1.4rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and(max-width:480px) {
+  .quick_access_middle_searchResult {
+    display: block;
+  }
+}
+
+@media screen and(max-width:375px) {
+  .search_result_page_container {
+    .price_sort_container {
+      span {
+        padding: 0.8rem 0.3rem;
+      }
+      .show_filter {
+        padding: 0.7rem 0.3rem;
+        svg {
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
+}

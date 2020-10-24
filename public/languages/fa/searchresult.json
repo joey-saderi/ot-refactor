@@ -1,0 +1,75 @@
+{
+  "nextSeo_title": "جستجو | اتولی",
+  "nextSeo_description": "اتولی سامانه‌ای است برای اجاره خودرو به‌صورت آنلاین. با اتولی هم می‌توانید ماشین اجاره کنید و هم از اجاره ماشین خود کسب درآمد کنید.",
+  "next_seo": {
+    "title": {
+      "start": "جستجو برای تهران، از ",
+      "ta": " تا ",
+      "otoli": " | اتولی"
+    },
+    "description": "اتولی سامانه‌ای است برای اجاره خودرو به‌صورت آنلاین. با اتولی هم می‌توانید ماشین اجاره کنید و هم از اجاره ماشین خود کسب درآمد کنید.",
+    "site_name": "اتولی",
+    "handle": "@otoli_net",
+    "site": "@otoli_net",
+    "cardType": "summar,y_large_image"
+  },
+  "count_bar_khodro": " خودرو ",
+  "count_bar_ta": " تا ",
+  "count_bar_change_search_btn_close": "بستن",
+  "count_bar_change_search_btn_p": "تغییر جستجو",
+  "search": {
+    "label_location": "خودرو را کجا تحویل میگیرید؟",
+    "label_location_search_place_holder": "در نام شهرها",
+    "label_start_date": "از تاریخ",
+    "error_empty_dates": "تاریخ شروع و پایان نمی‌تواند یکسان باشد",
+    "error_start_date": "تاریخ شروع را انتخاب کنید",
+    "label_end_date": "تا تاریخ",
+    "error_end_date": "تاریخ پایان را انتخاب کنید",
+    "btn": "جستجو"
+  },
+  "price_sort_container_high_to_low": "قیمت زیاد به کم",
+  "price_sort_container_low_to_high": "قیمت کم به زیاد",
+  "price_sort_container_advance_search_btn": "جستجوی پیشرفته",
+  "minimal_filters_price_from": "قیمت از ",
+  "minimal_filters_ta": " تا ",
+  "minimal_filters_deliver_to_your_location": "تحویل در محل",
+  "minimal_filters_with_deriver": "اجاره همراه راننده",
+  "minimal_filters_body_style": "فیلتر نوع بدنه",
+  "minimal_filters_brand": "فیلتر براساس سازنده",
+  "minimal_filters_model": "فیلتر براساس نام مدل",
+  "filter": {
+    "filter_section_h3_1": "خدمات اجاره",
+    "filter_section_check_box_deliver_at_renters_place": "تحویل در محل به شما",
+    "filter_section_check_box_with_driver": "اجاره همراه با راننده",
+    "filter_section_h3_2": "نوع بدنه",
+    "filter_section_drop_down_1_label": "سازنده",
+    "filter_section_drop_down_1_place_holder": "در سازنده‌ها",
+    "filter_section_drop_down_2_label": "نام مدل",
+    "filter_section_drop_down_2_place_holder": "در نام مدل‌ها",
+    "filter_section_result_count_wrapper_namayesh": "نمایش ",
+    "filter_section_result_count_wrapper_khodro": " خودرو",
+    "filter_section_result_count_wrapper_no_result": "با فیلترهای انتخاب شده نتیجه‌ای پیدا نشد."
+  },
+  "search_result_section": {
+    "Not_Result_part_1": "متاسفانه نتیجه‌ای برای جستجوی شما پیدا نشد.",
+    "Not_Result_part_2": "اگر از فیلترها استفاده کرده‌اید می‌توانید آنها را غیرفعال کنید یا تاریخ‌های دیگر را امتحان کنید.",
+    "Not_Result_part_3": "همیشه می‌توانید با پشتیبانی اتولی (",
+    "Not_Result_part_4": "02188567759",
+    "Not_Result_part_5": ") تماس بگیرید.",
+    "car": {
+      "thousand": "هزار",
+      "million": "میلیون",
+      "discount": "% تخفیف",
+      "special": "ویژه",
+      "default_image": "تصویر پیش فرض خودرو",
+      "show_details": "مشاهده مشخصات",
+      "toman_per_day": " تومان در روز",
+      "delivar_at_your_palce": "تحویل در محل",
+      "with_driver": "اجاره با راننده"
+    }
+  },
+  "quick_access_middle_searchResult_h2": "دسترسی سریع",
+  "quick_access_middle_searchResult_p_1": "خودروهای شاسی‌بلند",
+  "quick_access_middle_searchResult_p_2": "خودروهای اقتصادی",
+  "Load_more_car": "نمایش ماشین‌های بیشتر"
+}

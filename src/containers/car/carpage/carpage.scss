@@ -1,0 +1,657 @@
+@import "../../../styles/colors";
+
+.Top_Rent_date {
+  display: none;
+}
+.Car_page_container {
+  margin-top: -2rem;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: self-start;
+  .carInfo_container {
+    box-shadow: $box_shadow;
+    background: #fff;
+    padding: 1.6rem;
+    width: 63%;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 4px;
+    font-size: 1.4rem;
+    .price_place_holder {
+      display: none;
+      position: absolute;
+      background: #fff;
+      top: 0rem;
+      text-align: center;
+      left: 1rem;
+      width: 10.6rem;
+      height: 9rem;
+      padding-top: 3.54rem;
+    }
+    .avg_discounted_price_per_day {
+      display: none;
+      .discount_price {
+        color: $orange;
+        text-decoration: line-through;
+        font-size: 1.8rem;
+      }
+      span {
+        color: $more_gray;
+        line-height: 0.7;
+      }
+    }
+    h1 {
+      font-size: 2.4rem;
+      margin-bottom: 0;
+    }
+    h4 {
+      margin-top: 0;
+      font-weight: 400;
+    }
+    .calender_section_mobile_view {
+      display: none;
+      .Rent_date {
+        text-align: right;
+        font-weight: 500;
+        font-size: 1.2rem;
+        margin-top: 2.5rem;
+        display: flex;
+        justify-content: space-between;
+        p {
+          svg {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 1.3rem;
+            width: 2rem;
+          }
+          .day_name {
+            display: inline-block;
+            vertical-align: middle;
+          }
+        }
+        .change_date_in_car_page {
+          cursor: pointer;
+          color: $blue;
+        }
+      }
+      .search_box_div {
+        display: none;
+        .PushToRight {
+          .DatePicker__calendarContainer {
+            // transform: translateX(-20%) !important;
+            right: 0%;
+            left: auto;
+            transform: translateX(0) !important;
+            // border: 1px solid rgba(34, 36, 38, 0.15);
+            // border-radius: 4px;
+            // border-top-right-radius: 0px;
+            // box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.11);
+          }
+        }
+        .PushToLeft {
+          .DatePicker__calendarContainer {
+            // transform: translateX(-80%) !important;
+            left: 0%;
+            transform: translateX(0) !important;
+            // border: 1px solid rgba(34, 36, 38, 0.15);
+            // border-radius: 4px;
+            // box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.11);
+            // border-top-left-radius: 0px;
+          }
+        }
+        .date_Input_Container {
+          display: flex;
+          position: relative;
+          .input_container {
+            position: relative;
+            width: 100%;
+            .label {
+              font-size: 1.2rem;
+              text-align: right;
+            }
+            input {
+              font-family: inherit;
+              margin: 0.3rem auto;
+              display: block;
+              width: 100%;
+              outline: 0;
+              -webkit-appearance: none;
+              line-height: 1.5;
+              border: 1px solid $light_grey;
+              border-left: 0px solid $light_grey;
+              border-radius: 0.4rem;
+              border-top-left-radius: 0px;
+              border-bottom-left-radius: 0px;
+              padding: 0.94rem;
+              font-size: 1.4rem;
+              background: #fff;
+              color: rgba(0, 0, 0, 0.87);
+              box-shadow: 0 0 0 0 transparent inset;
+              &.activeBorder {
+                border-color: $blue;
+                border-left: 1px solid $blue;
+                border-bottom-right-radius: 0px;
+                border-bottom-left-radius: 0px;
+                box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.11);
+              }
+            }
+            .exception_input {
+              border: 1px solid $light_grey;
+              border-left: 1px solid $light_grey;
+              border-right: 1px solid $light_grey;
+              border-radius: 0.4rem;
+              border-top-left-radius: 4px;
+              border-top-right-radius: 0px;
+              border-bottom-left-radius: 4px;
+              border-bottom-right-radius: 0px;
+            }
+            span {
+              position: absolute;
+              font-size: 1rem;
+              color: firebrick;
+              font-weight: 500;
+            }
+          }
+          .DatePicker {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            input {
+              cursor: pointer;
+              opacity: 0;
+              text-align: right;
+              padding: 0.94rem;
+              font-family: inherit;
+              margin: 0.3rem auto 0.5rem;
+              display: block;
+              width: 100%;
+              height: 100%;
+              outline: 0;
+              -webkit-appearance: none;
+              line-height: 1;
+              font-size: 1.4rem;
+              background: #fff;
+              border: 1px solid $light_grey;
+              color: rgba(0, 0, 0, 0.87);
+              border-radius: 0.4rem;
+              box-shadow: 0 0 0 0 transparent inset;
+            }
+          }
+          .Calendar {
+            border-top-right-radius: 0px;
+            border-top-left-radius: 0px;
+            border: 1px solid rgba(34, 36, 38, 0.15);
+            box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.11);
+          }
+          .DatePicker__calendarArrow {
+            display: none;
+          }
+          .DatePicker__calendarContainer {
+            top: 96%;
+          }
+        }
+      }
+    }
+    h2 {
+      margin: 0;
+      font-size: 1.8rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+    p,
+    pre,
+    span {
+      line-height: 2;
+      font-family: inherit;
+      display: block;
+    }
+    pre {
+      white-space: pre-line;
+    }
+    hr {
+      border-width: 0.1rem;
+      margin-top: 2.2rem;
+      margin-bottom: 1.2rem;
+      border-bottom-width: 0;
+      border-color: rgba(34, 36, 38, 0.1);
+    }
+    .info_container {
+      p:last-child span {
+        border-bottom-color: transparent !important;
+      }
+      .alignThem {
+        line-height: 2;
+        .info_name {
+          width: 9rem;
+          line-height: 3.2rem;
+          display: inline-block;
+          vertical-align: middle;
+          border-bottom: 1px solid rgba(204, 204, 204, 0.25);
+          border-left: 1px solid rgba(204, 204, 204, 0.25);
+        }
+        .info_value {
+          border-bottom: 1px solid rgba(204, 204, 204, 0.25);
+          line-height: 3.2rem;
+          width: 18rem;
+          display: inline-block;
+          padding-right: 1rem;
+          vertical-align: middle;
+        }
+      }
+    }
+    .facilities_container {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      flex-wrap: wrap;
+      p {
+        color: rgb(101, 101, 101);
+        border: none;
+        background: rgb(230, 230, 230);
+        width: 126px;
+        border-radius: 4px;
+        text-align: center;
+        padding: 0.2rem 0.5rem;
+        margin: 6px;
+        font-size: 1.2rem;
+        font-weight: 500;
+      }
+    }
+    .car_Tags {
+      cursor: pointer;
+      display: inline-block;
+      color: $blue;
+      border: none;
+      padding: 0.2rem 2.5rem;
+      text-indent: -14px;
+      margin: 0 0.6rem;
+      font-size: 1.2rem;
+      font-weight: 500;
+      svg {
+        vertical-align: middle;
+        margin-left: 0.4rem;
+        width: 1.6rem;
+      }
+    }
+  }
+  .onwnerInfo_container {
+    display: inline-block;
+    width: 34%;
+    background: #fff;
+    border-radius: 4px;
+    padding: 1.6rem;
+    box-shadow: $box_shadow;
+    .price_place_holder {
+      height: 8.7rem;
+      padding-top: 3rem;
+    }
+    .avg_discounted_price_per_day {
+      .discount_price {
+        color: $orange;
+        text-decoration: line-through;
+        font-size: 1.8rem;
+      }
+      p {
+        font-weight: 500;
+        font-size: 2.8rem;
+        text-align: center;
+      }
+      span.unit_name {
+        font-size: 1.4rem;
+      }
+      span {
+        font-size: 1.2rem;
+        display: block;
+        color: $more_gray;
+        text-align: center;
+        line-height: 0.7;
+      }
+    }
+    .search_box_div {
+      text-align: center;
+      margin-top: 2.5rem;
+      // .DatePicker {
+      //   input {
+      //     border-radius: 4px;
+      //     opacity: 0;
+      //   }
+      // }
+      .date_Input_Container {
+        display: flex;
+        position: relative;
+        .input_container {
+          position: relative;
+          width: 100%;
+          .label {
+            font-size: 1.2rem;
+            text-align: right;
+          }
+          input {
+            font-family: inherit;
+            margin: 0.3rem auto;
+            display: block;
+            width: 100%;
+            outline: 0;
+            -webkit-appearance: none;
+            line-height: 1.5;
+            border: 1px solid $light_grey;
+            border-left: 0px solid $light_grey;
+            border-radius: 0.4rem;
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
+            padding: 0.94rem;
+            font-size: 1.4rem;
+            background: #fff;
+            color: rgba(0, 0, 0, 0.87);
+            box-shadow: 0 0 0 0 transparent inset;
+            &.activeBorder {
+              border-color: $blue;
+              border-left: 1px solid $blue;
+              border-bottom-right-radius: 0px;
+              border-bottom-left-radius: 0px;
+              box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.11);
+            }
+          }
+          .exception_input {
+            border: 1px solid $light_grey;
+            border-left: 1px solid $light_grey;
+            border-right: 1px solid $light_grey;
+            border-radius: 0.4rem;
+            border-top-left-radius: 4px;
+            border-top-right-radius: 0px;
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 0px;
+          }
+          span {
+            position: absolute;
+            font-size: 1rem;
+            color: firebrick;
+            font-weight: 500;
+          }
+        }
+        .DatePicker {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          left: 0;
+          input {
+            cursor: pointer;
+            opacity: 0;
+            text-align: right;
+            padding: 0.94rem;
+            font-family: inherit;
+            margin: 0.3rem auto 0.5rem;
+            display: block;
+            width: 100%;
+            height: 100%;
+            outline: 0;
+            -webkit-appearance: none;
+            line-height: 1;
+            font-size: 1.4rem;
+            background: #fff;
+            border: 1px solid $light_grey;
+            color: rgba(0, 0, 0, 0.87);
+            border-radius: 0.4rem;
+            box-shadow: 0 0 0 0 transparent inset;
+          }
+          .Calendar {
+            border-top-right-radius: 0px;
+            border-top-left-radius: 0px;
+            border: 1px solid rgba(34, 36, 38, 0.15);
+            box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.11);
+          }
+          .DatePicker__calendarArrow {
+            display: none;
+          }
+          .DatePicker__calendarContainer {
+            top: 96%;
+          }
+        }
+      }
+    }
+    .Rent_date {
+      text-align: right;
+      font-weight: 500;
+      font-size: 1.2rem;
+      margin-top: 2.5rem;
+      margin-bottom: 4rem;
+      display: flex;
+      justify-content: space-around;
+      p {
+        svg {
+          display: inline-block;
+          vertical-align: middle;
+          font-size: 1.3rem;
+          width: 2rem;
+        }
+        .day_name {
+          display: inline-block;
+          vertical-align: middle;
+        }
+      }
+      .change_date_in_car_page {
+        cursor: pointer;
+        color: $blue;
+      }
+    }
+    .owner_part {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      img {
+        width: 5.4rem;
+        border-radius: 50%;
+        display: inline-block;
+        vertical-align: middle;
+      }
+      p {
+        display: inline-block;
+        margin-right: 1.4rem;
+        font-size: 1.4rem;
+        font-weight: 500;
+      }
+    }
+    .localClass {
+      display: block;
+      width: 100%;
+      margin-bottom: 1.6rem;
+    }
+    .extra_info {
+      line-height: 1.5;
+      text-align: center;
+      display: block;
+    }
+  }
+}
+
+@media screen and(max-width:1024px) {
+  .Car_page_container {
+    .onwnerInfo_container {
+      .Rent_date {
+        p {
+          .day_name {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and(max-width:720px) {
+  .Top_Rent_date {
+    display: block;
+    background: #a3678b;
+    text-align: center;
+    padding: 0.5rem 0;
+    p {
+      font-weight: 500;
+      font-size: 1.4rem;
+      color: #fff;
+    }
+  }
+  .Car_page_container {
+    margin-top: -1rem;
+    position: relative;
+    padding: 0;
+    z-index: 2;
+    display: block;
+    .carInfo_container {
+      width: 100%;
+      display: block;
+      position: relative;
+      border-radius: 0;
+      .price_place_holder {
+        display: block;
+      }
+      h1 {
+        font-size: 1.8rem;
+      }
+      .calender_section_mobile_view {
+        display: block;
+        .search_box_div {
+          display: block;
+        }
+      }
+      .avg_discounted_price_per_day {
+        display: block;
+        position: absolute;
+        padding: 0.5rem 1rem;
+        background: #fff;
+        top: 1.8rem;
+        text-align: center;
+        left: 1rem;
+        border-radius: 4px;
+        p {
+          font-size: 2rem;
+          line-height: 1.5;
+        }
+        span.unit_name {
+          font-size: 1.2rem;
+        }
+      }
+      .info_container {
+        .alignThem {
+          .info_value {
+            width: 14rem;
+          }
+        }
+      }
+      .facilities_container {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-wrap: wrap;
+        p {
+          color: rgb(101, 101, 101);
+          border: none;
+          background: rgb(230, 230, 230);
+          width: 126px;
+          border-radius: 4px;
+          text-align: center;
+          padding: 0.2rem 0.5rem;
+          margin: 6px;
+          font-size: 1.2rem;
+          font-weight: 500;
+        }
+      }
+      .car_Tags {
+        cursor: pointer;
+        display: inline-block;
+        color: $blue;
+        border: none;
+        padding: 0.2rem 2.5rem;
+        text-indent: -14px;
+        margin: 0 0.6rem;
+        font-size: 1.2rem;
+        font-weight: 500;
+        svg {
+          vertical-align: middle;
+          margin-left: 0.4rem;
+        }
+      }
+    }
+    .onwnerInfo_container {
+      width: 100%;
+      margin-top: 1.4rem;
+      .avg_discounted_price_per_day {
+        display: none;
+        p {
+          font-weight: 500;
+          font-size: 2.8rem;
+          text-align: center;
+        }
+        span.unit_name {
+          font-size: 1.4rem;
+        }
+        span {
+          font-size: 1.2rem;
+          display: block;
+          text-align: center;
+          line-height: 1.5;
+        }
+      }
+      .Rent_date {
+        display: none;
+      }
+      .search_box_div {
+        display: none;
+      }
+      .owner_part {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        img {
+          width: 5.4rem;
+          border-radius: 4px;
+          display: inline-block;
+          vertical-align: middle;
+        }
+        p {
+          display: inline-block;
+          margin-right: 1.4rem;
+          font-size: 1.4rem;
+          font-weight: 500;
+        }
+      }
+      .continue_to_checkout {
+        z-index: 5;
+        position: fixed;
+        box-shadow: rgb(204, 204, 204) 0px -1px 3px;
+        width: 100%;
+        bottom: 0px;
+        right: 0;
+        padding: 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #fff;
+        .localClass {
+          max-width: 18rem;
+          margin: 0;
+        }
+        .extra_info {
+          margin-right: 1rem;
+          font-size: 1.1rem;
+          text-align: justify;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+@media screen and(max-width:480px) {
+  .Car_page_container {
+    .carInfo_container {
+      .calender_section_mobile_view {
+        .Rent_date {
+          .day_name {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

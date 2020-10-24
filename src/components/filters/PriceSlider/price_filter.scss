@@ -1,0 +1,65 @@
+@import "../../../styles/colors";
+.price_filter {
+  margin-bottom: 3rem;
+  .price_text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    .TA {
+      font-weight: 500;
+    }
+    p {
+      font-weight: 100;
+    }
+  }
+  position: relative;
+  .noUi-target {
+    border: none;
+    box-shadow: none;
+    height: 5px;
+    margin: 1rem 0;
+    .noUi-origin {
+      left: -10px !important;
+      right: -15px;
+      .noUi-handle {
+        border: 3px solid $blue;
+        background-color: #fff;
+        box-shadow: none;
+        border-radius: 50%;
+        width: 24px;
+        height: 24px;
+        top: -10px;
+        left: 0;
+        right: 0;
+        &:focus {
+          outline: none;
+        }
+        &::after,
+        &::before {
+          display: none;
+        }
+      }
+    }
+    .noUi-connect {
+      background: $blue;
+    }
+    .noUi-base,
+    .noUi-connects {
+      height: 5px;
+    }
+  }
+}
+
+@media screen and(max-width:960px) {
+  .price_filter {
+    .noUi-target {
+      margin: 1rem 1.6rem;
+      .noUi-origin {
+        .noUi-handle {
+          right: auto;
+        }
+      }
+    }
+  }
+}

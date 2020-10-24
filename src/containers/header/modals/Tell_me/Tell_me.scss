@@ -1,0 +1,33 @@
+@import "../../../../styles/colors";
+
+.modal_box_div {
+  width: 100%;
+  &:nth-last-of-type(1) {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .p1 {
+    font-size: 1.4rem;
+    margin-bottom: 1.4rem;
+  }
+  .p3 {
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 0.8rem auto;
+  }
+  form {
+    width: 100%;
+    .error_message {
+      color: $Error_text_color;
+      font-size: 1.2rem;
+    }
+  }
+  .login_submit {
+    display: block;
+    width: 100%;
+    margin-top: 2rem;
+  }
+}

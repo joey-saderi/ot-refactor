@@ -1,0 +1,101 @@
+@import "../../../../styles/colors";
+
+.edit_profile_form {
+  .change_image_container {
+    position: relative;
+    margin-bottom: 2rem;
+    p {
+      font-size: 1.4rem;
+      text-align: center;
+      margin: 1rem 0;
+      color: $blue;
+      font-weight: 500;
+    }
+    input {
+      cursor: pointer;
+      width: 100%;
+      position: absolute;
+      display: block;
+      right: 0;
+      bottom: 0;
+      height: 12rem;
+      opacity: 0;
+      margin: 0;
+    }
+    .crop_container {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0px;
+      right: 0;
+      background: #313131;
+      z-index: 10;
+      .reactEasyCrop_Container {
+        z-index: 11;
+        .reactEasyCrop_CropArea {
+          color: rgba($dark_gray, 0.9);
+        }
+        img {
+          width: auto;
+          height: auto;
+          border-radius: 0;
+        }
+      }
+    }
+  }
+  img {
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+  }
+  .link_text {
+    color: $blue;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+  }
+  .text_input_container {
+    margin-bottom: 2rem;
+    label {
+      font-weight: 500;
+    }
+    input {
+      margin: 0.5rem 0;
+    }
+  }
+  .Crop_BTN_container,
+  .BTN_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .cancel_class {
+      background: transparent;
+      border: 1px solid $blue;
+      color: $blue;
+    }
+    .cancel_class,
+    .local_class {
+      width: 49%;
+      text-align: center;
+    }
+  }
+  .Crop_BTN_container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 1.5rem;
+    z-index: 20;
+    @media screen and(min-width:557px) {
+      width: 32rem;
+    }
+    .cancel_class {
+      color: $light_grey;
+      border-color: $light_grey;
+    }
+  }
+}

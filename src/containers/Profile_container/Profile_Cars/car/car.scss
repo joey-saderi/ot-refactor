@@ -1,0 +1,131 @@
+@import "../../../../styles/colors";
+
+.Profile_car_container {
+  .carcard {
+    // min-width: 32rem;
+    // max-width: 34rem;
+    height: 300px;
+    width: 49%;
+    margin: 0 0 2% 0;
+    background: #fff;
+    border-radius: 4px;
+    display: inline-block;
+    vertical-align: top;
+    box-shadow: $box_shadow;
+    direction: rtl;
+    figure {
+      position: relative;
+      height: 200px;
+      overflow: hidden;
+      border-top-right-radius: 4px;
+      border-top-left-radius: 4px;
+      .read_more {
+        display: none;
+        top: 43%;
+        background-color: #f7f7f7;
+        color: #2a2a2a;
+        font-size: 1rem;
+        padding: 0.7rem 0;
+        border-radius: 20px;
+        position: absolute;
+        right: 0;
+        left: 0;
+        margin: auto;
+        width: 102px;
+        text-align: center;
+      }
+      &:hover .read_more {
+        display: block;
+      }
+      img {
+        width: 100%;
+      }
+      .grey_car {
+        filter: grayscale(70%);
+        opacity: 0.5;
+      }
+      .alert_for_car {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        p {
+          padding: 0.3rem;
+          font-size: 1.2rem;
+          background-color: #fff;
+          span {
+            color: $blue;
+          }
+        }
+      }
+    }
+    .info_box {
+      position: relative;
+      padding: 0 0.8rem;
+      .car_brand {
+        h3 {
+          font-size: 2rem;
+          margin-bottom: 0;
+          width: 200px;
+          display: inline-block;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+        p {
+          font-size: 1.3rem;
+          margin-top: -0.8rem;
+        }
+      }
+    }
+    .edit_part {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 0.8rem;
+      margin-top: 1.5rem;
+      .Loading {
+        margin: 0 1rem;
+      }
+      p {
+        cursor: pointer;
+        font-weight: 500;
+        font-size: 1.2rem;
+        color: $blue;
+      }
+      .set_car_timing_btn {
+        background: #038ed21c;
+        border-radius: 3px;
+        color: #007cb9;
+        padding: 0.6rem 1rem;
+        display: block;
+        margin-top: -8px;
+        height: 28px;
+      }
+      svg {
+        cursor: pointer;
+        width: 2rem;
+      }
+      .icon_container {
+        span {
+          margin-right: 1.6rem;
+        }
+      }
+    }
+  }
+}
+
+// @media screen and(max-width:1200px) {
+//   .Profile_car_container {
+//     .carcard {
+//       min-width: 29rem;
+//     }
+//   }
+// }
+
+@media screen and(max-width:480px) {
+  .Profile_car_container {
+    .carcard {
+      width: 100%;
+      margin: 0 0 2rem;
+    }
+  }
+}

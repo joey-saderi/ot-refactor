@@ -1,0 +1,53 @@
+@import "../../../styles/colors";
+
+.Profile_car_container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: 100%;
+  direction: ltr;
+  .service_filer {
+    width: 100%;
+    text-align: left;
+    direction: rtl;
+    margin-bottom: 1.6rem;
+    .radio_container {
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-right-color: transparent;
+      padding: 0.2rem;
+      padding-left: 1rem;
+      margin-left: 0;
+      color: rgba(0, 0, 0, 0.5);
+      &:first-child {
+        border-color: rgba(0, 0, 0, 0.08);
+      }
+      .container {
+        font-size: 1.2rem;
+        font-weight: 500;
+        padding: 0 1rem;
+        .checkmark {
+          display: none;
+        }
+      }
+    }
+    .active_radio_item {
+      label {
+        color: rgba(0, 0, 0, 0.9);
+      }
+    }
+  }
+  .noCar_added {
+    margin-top: 2rem;
+    text-align: center;
+    width: 100%;
+    p {
+      font-weight: 500;
+      font-size: 1.4rem;
+      margin-bottom: 1.4rem;
+    }
+  }
+  .Load_more_car_container {
+    width: 100%;
+  }
+}

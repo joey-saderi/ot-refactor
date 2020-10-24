@@ -1,0 +1,83 @@
+@import "../../../styles/colors";
+.slider {
+  width: 100%;
+  height: 30rem;
+}
+.Car_page_container_loading {
+  margin-top: -2rem;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: self-start;
+  .carInfo_container {
+    box-shadow: $box_shadow;
+    background: #fff;
+    padding: 1.6rem;
+    width: 63%;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 4px;
+    text-align: right;
+    h1,
+    h2,
+    h4,
+    p,
+    span {
+      height: 2rem;
+      width: 90%;
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
+    hr {
+      border-width: 0.1rem;
+      margin-top: 2.2rem;
+      margin-bottom: 1.2rem;
+      border-bottom-width: 0;
+      border-color: $light_grey;
+    }
+  }
+  .onwnerInfo_container {
+    display: inline-block;
+    width: 34%;
+    background: #fff;
+    border-radius: 4px;
+    padding: 1.6rem;
+    box-shadow: $box_shadow;
+    text-align: right;
+    .avg_discounted_price_per_day {
+      width: 12rem;
+      height: 12rem;
+      margin: auto;
+      margin-bottom: 2rem;
+    }
+    .owner_part {
+      width: 60%;
+      height: 1rem;
+      margin-bottom: 2rem;
+    }
+    .continue_to_checkout {
+      width: 100%;
+      height: 3rem;
+      margin: auto;
+    }
+  }
+}
+
+@media screen and(max-width:720px) {
+  .Car_page_container_loading {
+    margin-top: -1rem;
+    position: relative;
+    z-index: 2;
+    display: block;
+    .carInfo_container {
+      width: 100%;
+      display: block;
+      position: relative;
+    }
+    .onwnerInfo_container {
+      width: 100%;
+      margin-top: 1.4rem;
+    }
+  }
+}

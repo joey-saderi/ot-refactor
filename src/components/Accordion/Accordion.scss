@@ -1,0 +1,38 @@
+@import "../../styles/colors";
+
+.FQ_BOX {
+  cursor: pointer;
+  border-top: 1px solid #ccc;
+  padding: 1.6rem;
+  position: relative;
+  h3 {
+    font-size: 1em;
+  }
+  p {
+    font-size: 1.4rem;
+    width: 95%;
+  }
+  .ICON_CHevron {
+    transition: 0.25s;
+    position: absolute;
+    left: 9px;
+    top: 20px;
+    width: 2rem;
+  }
+  .ACTIVE_CHEVRON {
+    transform: rotate(180deg);
+  }
+  .QuestionPart {
+    display: none;
+    font-size: 1.4rem;
+    color: rgb(42, 42, 42);
+  }
+  .activeQA {
+    display: block;
+    color: rgba(0, 0, 0, 0.95) !important;
+  }
+  a {
+    color: $blue;
+    font-weight: 500;
+  }
+}

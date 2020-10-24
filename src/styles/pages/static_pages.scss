@@ -1,0 +1,56 @@
+@import "../colors";
+@import "../units";
+
+.static_pages {
+  text-align: justify;
+  background-color: #fdfdfd;
+  box-shadow: $box_shadow;
+  margin-top: $padding_top; 
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-radius: 4px;
+  h1 {
+    font-size: 2.6rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+  }
+  h4 {
+    font-weight: 400;
+    font-size: 1.6rem;
+  }
+  p {
+    font-size: 1.4rem;
+    line-height: 2;
+  }
+  .intends {
+    padding-right: 50px !important;
+  }
+  ul {
+    list-style-type: arabic-indic;
+    list-style-position: inside;
+    li {
+      font-size: 1.4rem;
+      line-height: 2;
+      margin-bottom: 8px;
+    }
+  }
+  a {
+    color: $blue;
+    font-weight: 500;
+    text-decoration: underline;
+  }
+}
+
+.site_map_page {
+  ul {
+    column-count: 3;
+    a {
+      color: $blue;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+@import "../../../styles/colors";
+
+.search_result_section {
+  display: inline-block;
+  width: 70%;
+  // display: flex;
+  // justify-content: space-between;
+  // align-items: flex-start;
+  // flex-wrap: wrap;
+  direction: ltr;
+  margin-top: 2rem;
+  .Not_Result {
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 2;
+    direction: rtl;
+    a {
+      color: $blue;
+    }
+  }
+}
+
+@media screen and(max-width:960px) {
+  .search_result_section {
+    width: 100%;
+  }
+}
+
+@media screen and(max-width:768px) {
+  .search_result_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+}

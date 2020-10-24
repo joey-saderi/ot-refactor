@@ -1,0 +1,310 @@
+@import "../../styles/colors";
+@import "../../styles/units";
+
+.Checkout_container {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: self-start;
+  padding-top: $padding_top;
+  .car_info_insurance {
+    width: 63%;
+    display: inline-block;
+    vertical-align: top;
+    .Date_container {
+      display: none;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: $box_shadow;
+      background: #fff;
+      padding: 1.6rem;
+      border-radius: 4px;
+      margin-bottom: 1.6rem;
+      p {
+        font-weight: 500;
+        font-size: 1.4rem;
+      }
+      svg {
+        width: 3rem;
+      }
+    }
+    .car_info {
+      box-shadow: $box_shadow;
+      background: #fff;
+      padding: 1.6rem;
+      font-size: 1.4rem;
+      border-radius: 4px;
+      .car_owner_part {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h1 {
+          font-size: 2.4rem;
+          margin-bottom: 0;
+        }
+        h4 {
+          margin-top: 0;
+          font-weight: 400;
+        }
+        .car_image {
+          width: 17rem;
+          img {
+            display: block;
+            margin: auto;
+            width: 100%;
+            border-radius: 4px;
+          }
+        }
+      }
+      h2 {
+        margin: 0;
+        font-size: 1.8rem;
+        font-weight: 500;
+        margin-bottom: 1rem;
+      }
+      p,
+      pre,
+      span {
+        line-height: 2;
+        font-family: inherit;
+        display: block;
+      }
+      pre {
+        white-space: pre-line;
+      }
+      hr {
+        border-width: 0.1rem;
+        margin-top: 2.2rem;
+        margin-bottom: 1.2rem;
+        border-bottom-width: 0;
+        border-color: rgba($light_grey, 0.1);
+      }
+      .owner_part {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        img {
+          width: 5.4rem;
+          border-radius: 50%;
+          display: inline-block;
+          vertical-align: middle;
+        }
+        p {
+          display: inline-block;
+          margin-right: 1.4rem;
+          font-size: 1.4rem;
+          font-weight: 500;
+        }
+      }
+    }
+    .insurance {
+      box-shadow: $box_shadow;
+      background: #fff;
+      padding: 1.6rem;
+      font-size: 1.4rem;
+      border-radius: 4px;
+      margin-top: 1.6rem;
+      h2 {
+        margin: 0;
+        font-size: 1.8rem;
+        font-weight: 500;
+        margin-bottom: 1rem;
+      }
+      .radio_container {
+        margin-bottom: 1.4rem;
+      }
+    }
+  }
+  .payment_info_container {
+    display: inline-block;
+    width: 34%;
+    background: #fff;
+    border-radius: 4px;
+    padding: 1.6rem;
+    box-shadow: $box_shadow;
+    .Date_container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      p {
+        font-weight: 500;
+        font-size: 1.4rem;
+      }
+      svg {
+        width: 3rem;
+      }
+    }
+    .number_of_days {
+      text-align: center;
+      font-size: 1.4rem;
+      margin-bottom: 2rem;
+      margin-top: 1rem;
+    }
+    .payment_information {
+      .coupon_Text_show {
+        cursor: pointer;
+        font-weight: 500;
+      }
+      .Discount_color {
+        color: $orange;
+        span {
+          color: $orange;
+        }
+      }
+      p {
+        font-size: 1.4rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        line-height: 2;
+        span {
+          font-weight: 500;
+          &:last-child {
+            font-size: 1.6rem;
+          }
+          .Toman {
+            font-weight: 400;
+            font-size: 1.2rem;
+          }
+        }
+      }
+      .coupon_form {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        .coupon_container {
+          position: relative;
+          margin-left: 1rem;
+          width: 100%;
+          .close_icon {
+            position: absolute;
+            top: 11px;
+            left: 1rem;
+          }
+          .text_input_container {
+            input {
+              margin: 0;
+            }
+            .input_error_message {
+              font-size: 1.2rem;
+            }
+          }
+        }
+        .coupan_BTN {
+          background: #fff;
+          border: 1px solid $blue;
+          color: $blue;
+          padding: 1rem 2.1rem;
+        }
+      }
+      .total_price {
+        margin-top: 1.4rem;
+        border-top: 1px solid $light_grey;
+        .total_price_text {
+          font-size: 2rem;
+        }
+        .total_price_number {
+          font-size: 2rem;
+        }
+      }
+    }
+    .localClass {
+      display: block;
+      margin-top: 1.6rem;
+      width: 100%;
+      margin-bottom: 1.6rem;
+    }
+    .extra_info {
+      line-height: 1.5;
+      text-align: center;
+      display: block;
+    }
+  }
+}
+
+@media screen and(max-width:720px) {
+  .Checkout_container {
+    display: block;
+    padding-top: 0rem;
+    .car_info_insurance {
+      width: 100%;
+      display: block;
+      .Date_container {
+        display: flex;
+      }
+      .car_info {
+        .car_owner_part {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          h1 {
+            font-size: 2rem;
+            width: 200px;
+            display: inline-block;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+          }
+        }
+      }
+    }
+    .payment_info_container {
+      width: 100%;
+      margin-top: 1.6rem;
+      margin-bottom: 6rem;
+      .Date_container {
+        display: none;
+      }
+      .number_of_days {
+        display: none;
+      }
+      .continue_to_pay {
+        z-index: 5;
+        position: fixed;
+        box-shadow: rgb(204, 204, 204) 0px -1px 3px;
+        width: 100%;
+        bottom: 0px;
+        right: 0;
+        padding: 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #fff;
+        .localClass {
+          max-width: 18rem;
+          margin: 0;
+        }
+        .extra_info {
+          margin-right: 1rem;
+          text-align: justify;
+          font-size: 1.1rem;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+@media screen and(max-width:575px) {
+  .Checkout_container {
+    .car_info_insurance {
+      .car_info {
+        .car_owner_part {
+          display: block;
+          h1 {
+            width: 155px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+          }
+          div,
+          .car_image {
+            display: inline-block;
+            width: 50%;
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+  }
+}

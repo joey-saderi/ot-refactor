@@ -1,0 +1,43 @@
+@import "../../../../styles/colors";
+
+.modal_box_div {
+  width: 100%;
+  .modal_scroll_section {
+    direction: rtl;
+    overflow-y: scroll;
+    padding: 1rem;
+    text-align: justify;
+    margin: 0 0 1.4rem;
+    border: 1px solid #eaeaea;
+    border-radius: 4px;
+    height: 50vh;
+    &::-webkit-scrollbar {
+      width: 1rem;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background: $scrollbar_track;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: $scrollbar_thumb;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: $scrollbar_thumb_hovor;
+    }
+    p {
+      font-size: 1.4rem;
+    }
+    strong {
+      font-weight: 500;
+    }
+    li {
+      font-size: 1.4rem;
+      line-height: 1.5;
+    }
+  }
+}

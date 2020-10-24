@@ -1,0 +1,32 @@
+@import "../../../../styles/colors";
+
+.modal_box_div {
+  width: 100%;
+  form {
+    width: 100%;
+    .error_message {
+      color: $Error_text_color;
+      font-size: 1.2rem;
+    }
+    .modal_content_confirm_delete {
+      font-size: 1.4rem;
+      margin-bottom: 3rem;
+      margin-top: 1rem;
+    }
+    .button_container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .Blue_BTN {
+        border: 2px solid $blue;
+        padding: 0.5rem 3rem;
+        width: 10.3rem;
+        margin: 0 1rem;
+      }
+      .cancel_btn {
+        background-color: #fff;
+        color: $blue;
+      }
+    }
+  }
+}

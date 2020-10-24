@@ -1,0 +1,31 @@
+@import "../../styles/colors";
+.request_page_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .request_section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    .Request_car {
+      margin: 0;
+    }
+  }
+}
+
+@media screen and(max-width:720px) {
+  .request_page_container {
+    .request_section {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      .Request_car {
+        margin: 0;
+      }
+    }
+  }
+}

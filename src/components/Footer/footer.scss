@@ -1,0 +1,135 @@
+@import "../../styles/colors";
+
+footer {
+  background-color: #ffffff;
+  &.hide_footer {
+    display: none;
+  }
+  padding-top: 2rem !important;
+  .toTop {
+    opacity: 0;
+    z-index: -1;
+    &.showTop {
+      opacity: 1;
+    }
+    svg {
+      z-index: 9;
+      background: $blue;
+      position: fixed;
+      left: 5rem;
+      bottom: 6rem;
+      width: 4rem;
+      border-radius: 4px;
+      path {
+        &:first-child {
+          color: #fff;
+        }
+      }
+    }
+  }
+  .plus_border {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem !important;
+
+    ul {
+      width: 50%;
+      border-left: 1px solid #e8e8e8;
+      li {
+        display: block;
+        a {
+          transition: 0.25s all;
+          line-height: 2;
+          font-size: 1.4rem;
+          color: $blue;
+          margin-bottom: 0.5rem;
+          display: block;
+          &:hover {
+            padding-right: 0.5rem;
+          }
+        }
+      }
+    }
+    .social_container_footer {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      h3 {
+        width: 230px;
+        color: #929292;
+        font-size: 1.4rem;
+      }
+      div {
+        width: 230px;
+        svg {
+          margin-left: 1rem;
+          width: 3rem;
+        }
+      }
+      a {
+        color: $blue;
+        font-size: 1.4rem;
+        font-weight: 500;
+      }
+      p {
+        width: 230px;
+        color: #929292;
+        margin-top: 1.6rem;
+        font-weight: 500;
+      }
+    }
+  }
+  .signature {
+    display: block;
+    text-align: center;
+    position: relative;
+    p {
+      display: inline-block;
+      vertical-align: middle;
+      margin-bottom: 1rem;
+      font-weight: 500;
+      opacity: 0.6;
+    }
+    span {
+      position: absolute;
+      left: 1.5rem;
+      top: 0.3rem;
+      opacity: 0.5;
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  footer {
+    .toTop {
+      transition: 0.25s all;
+      svg {
+        transition: 0.25s all;
+        opacity: 0.5;
+        left: 2rem;
+        bottom: 4rem;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 575px) {
+  footer {
+    .plus_border {
+      display: block;
+      ul {
+        width: 100%;
+        border-left-color: transparent;
+      }
+      .social_container_footer {
+        text-align: center;
+        width: 100%;
+      }
+    }
+  }
+}

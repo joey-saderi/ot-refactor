@@ -1,0 +1,63 @@
+@import "../../../../styles/colors";
+
+.modal_box_div {
+  width: 100%;
+  .rate_to_owner_car {
+    text-align: center;
+    img {
+      max-width: 18rem;
+      max-height: 7rem;
+      border-radius: 4px;
+    }
+    h3 {
+      font-weight: 500;
+      font-size: 1.6rem;
+      margin: 0;
+    }
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+    .star-ratings {
+      direction: ltr;
+      display: block !important;
+      svg {
+        width: 2rem;
+      }
+    }
+    label {
+      text-align: right;
+      font-size: 1.4rem;
+      width: 100%;
+      display: block;
+      margin-top: 0.5rem;
+    }
+    textarea {
+      box-sizing: border-box;
+      width: 100%;
+      margin-top: 0.5rem;
+      padding: 1.4rem;
+      height: 8rem;
+      border-radius: 4px;
+      border: 1px solid $light_grey;
+      font-family: inherit;
+    }
+    .rate_buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1.4rem;
+      align-items: center;
+      .submit_submit {
+        display: block;
+        width: 48%;
+      }
+      .cancel_submit {
+        display: block;
+        width: 48%;
+        background-color: transparent;
+        color: $blue;
+        border: 1px solid $blue;
+      }
+    }
+  }
+}

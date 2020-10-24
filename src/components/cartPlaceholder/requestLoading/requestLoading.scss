@@ -1,0 +1,72 @@
+@import "../../../styles/colors";
+
+.requests_section_loader {
+  border-radius: 4px;
+  width: 96%;
+  margin: auto;
+  margin-bottom: 1.4rem;
+  padding: 0rem;
+  background: #fff;
+  box-shadow: $box_shadow;
+  .cart {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 1.6rem;
+    padding: 1rem;
+    .rent_info {
+      width: 70%;
+      h2 {
+        width: 10rem;
+        height: 1rem;
+        margin: 0.54rem 0;
+        display: inline-block;
+      }
+      h3 {
+        width: 10rem;
+        height: 1rem;
+        margin: 0.54rem 0;
+        display: block;
+      }
+      p {
+        font-size: 1.4rem;
+        display: block;
+        width: 5rem;
+        height: 1.6rem;
+      }
+      .rent_duration {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .no_of_days {
+        font-weight: 500;
+        font-size: 1.4rem;
+      }
+    }
+    .image_pelak {
+      max-width: 16rem;
+      display: block;
+      max-height: 16rem;
+      margin: 0 auto;
+      figure {
+        width: 12rem;
+        height: 10rem;
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  .Role_container {
+    padding: 0.5rem 1rem 1rem;
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  .Button_container {
+    padding: 1rem;
+    height: 4rem;
+  }
+}

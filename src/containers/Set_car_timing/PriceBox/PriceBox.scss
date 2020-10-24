@@ -1,0 +1,156 @@
+@import "../../../styles/colors";
+
+.Price_form_container {
+  width: auto;
+  position: relative;
+  padding-bottom: 5rem;
+  .input_price_Box {
+    max-width: 32rem;
+    padding: 1.6rem;
+    border: 1px solid $light_grey;
+    border-radius: 4px;
+    .tail {
+      position: relative;
+      input {
+        direction: ltr;
+        text-indent: 7rem;
+        text-align: left;
+        padding: 0.94rem;
+        font-family: inherit;
+        margin: 0.3rem auto 0.5rem;
+        display: block;
+        width: 100%;
+        outline: 0;
+        -webkit-appearance: none;
+        line-height: 1;
+        font-size: 1.4rem; 
+        border: 1px solid rgba(34, 36, 38, 0.15);
+        color: rgba(0, 0, 0, 0.87);
+        border-radius: 0.4rem;
+      }
+      .clean_icon {
+        position: absolute;
+        left: 49px;
+        top: 31px;
+      }
+      span {
+        position: absolute;
+        top: 3.4rem;
+        left: 1rem;
+      }
+    }
+    .datePickerError {
+      input {
+        border: 1px solid $Error_text_color !important;
+        background: rgba(216, 48, 48, 0.1) !important;
+      }
+
+      .input_error_message {
+        font-size: 1.2rem;
+        color: $Error_text_color;
+      }
+    }
+    .divs {
+      width: 100%;
+      margin: 1rem 0;
+      .Diff_margin {
+        margin-bottom: 0.3rem;
+      }
+    }
+    .button_box {
+      align-items: center;
+      display: flex;
+      justify-content: start;
+      p {
+        cursor: pointer;
+        padding: 0 1.4rem;
+      }
+      .Trash_icon_in_price_cart {
+        margin: auto;
+        margin-left: 0;
+        cursor: pointer;
+        width: 2rem;
+      }
+    }
+  }
+  .add_new_one {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    bottom: 0rem;
+    p {
+      color: $blue;
+      font-size: 1.4rem;
+      display: inline-block;
+      border: 1px solid $blue;
+      border-radius: 4px;
+      padding-left: 2rem;
+      svg {
+        padding: 0.5rem;
+        display: inline-block;
+        vertical-align: middle;
+        background-color: rgba(0, 0, 0, 0.05);
+        margin-left: 1rem;
+        width: 2rem;
+      }
+    }
+  }
+  .DatePicker {
+    width: 100%;
+    input {
+      padding: 0.94rem;
+      font-family: inherit;
+      text-align: center;
+      margin: 0.3rem auto 0.5rem;
+      display: block;
+      width: 100%;
+      outline: 0;
+      -webkit-appearance: none;
+      line-height: 1;
+      font-size: 1.4rem;
+      background: #fff;
+      border: 1px solid $light_grey;
+      color: rgba(0, 0, 0, 0.87);
+      border-radius: 0.4rem;
+      box-shadow: 0 0 0 0 transparent inset;
+      cursor: pointer;
+    }
+  }
+  .Price_container {
+    .Date_list {
+      display: block;
+      .Date_list_item {
+        border: 1px solid $light_grey;
+        padding: 1.2rem;
+        margin-top: 2rem;
+        display: inline-block;
+        border-radius: 4px;
+        p {
+          color: $more_gray;
+          font-weight: 500;
+          display: inline-block;
+          vertical-align: middle;
+          line-height: 2;
+        }
+        .nothing {
+          color: rgba(34, 36, 38, 0.6);
+          margin-bottom: 1rem;
+        }
+        .button_box {
+          display: inline-block;
+          span {
+            display: inline-block;
+            font-size: 1.2rem;
+            margin: 0 1rem 0 0;
+            padding-right: 2rem;
+            color: $more_gray;
+            cursor: pointer;
+            svg {
+              width: 2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

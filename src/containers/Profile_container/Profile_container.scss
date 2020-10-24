@@ -1,0 +1,14 @@
+@import "../../styles/units";
+
+.profile_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: $padding_top;
+}
+
+@media screen and(max-width:960px) {
+  .profile_container {
+    display: block;
+  }
+}

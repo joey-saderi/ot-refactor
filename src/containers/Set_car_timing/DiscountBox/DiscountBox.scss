@@ -1,0 +1,118 @@
+@import "../../../styles/colors";
+.Discount_form_container {
+  position: relative;
+  padding-bottom: 5rem;
+  margin-bottom: 2rem;
+  .add_new_one {
+    position: absolute;
+    right: 0;
+    bottom: 0rem;
+    cursor: pointer;
+    margin-top: 1.6rem;
+    p {
+      color: $blue;
+      font-size: 1.4rem;
+      display: inline-block;
+      border: 1px solid $blue;
+      border-radius: 4px;
+      padding-right: 1rem;
+      svg {
+        padding: 0.5rem;
+        display: inline-block;
+        vertical-align: middle;
+        background-color: rgba($blue, 0.07);
+        margin-right: 0.8rem;
+        width: 2rem;
+        border-radius: 4px 0 0 4px;
+      }
+    }
+  }
+  .Discount_Controller {
+    display: block;
+    margin-top: 1.6rem;
+    max-width: 32rem;
+    padding: 1.6rem;
+    border: 1px solid $light_grey;
+    border-radius: 4px;
+    .DropDown_container,
+    .text_input_container {
+      margin-bottom: 0.5rem;
+    }
+    .containers {
+      width: 100%;
+      margin-left: 0;
+      margin-bottom: 1rem;
+      .input_error_message {
+        font-size: 1.2rem;
+        color: $Error_text_color;
+      }
+      label {
+        margin-bottom: 1rem;
+      }
+    }
+    .button_box {
+      justify-content: start;
+      align-items: center;
+      display: flex;
+      margin-top: 1.6rem;
+      p {
+        padding: 0 1.4rem;
+        cursor: pointer;
+      }
+      .Trash_icon_in_price_cart {
+        margin: auto;
+        margin-left: 0;
+        cursor: pointer;
+        width: 2rem;
+      }
+    }
+    .tail {
+      position: relative;
+      span {
+        position: absolute;
+        top: 3.2rem;
+        left: 1rem;
+        font-size: 2rem;
+        color: $more_gray;
+      }
+      input {
+        text-indent: 5rem;
+        height: 42px;
+        margin: 3px 0 5px 0;
+        direction: ltr;
+      }
+      svg {
+        left: 33px;
+      }
+    }
+  }
+  .Discount_list {
+    .discount_item_container {
+      display: block;
+      .discount_item {
+        border: 1px solid $light_grey;
+        padding: 1.2rem;
+        margin-top: 2rem;
+        display: inline-block;
+        border-radius: 4px;
+        width: auto;
+        p {
+          display: inline-block;
+          vertical-align: middle;
+          margin-left: 1rem;
+        }
+        span {
+          display: inline-block;
+          margin-left: 1rem;
+          font-size: 1.2rem;
+          color: $more_gray;
+          padding-right: 2rem;
+          cursor: pointer;
+          svg {
+            width: 2rem;
+          }
+        }
+      }
+    }
+  }
+}

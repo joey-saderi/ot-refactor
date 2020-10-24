@@ -1,0 +1,32 @@
+@import "../colors";
+@import "../units";
+
+.FAQ_Page {
+  background-color: #fff;
+  box-shadow: $box-shadow;
+  padding: 1.6rem;
+  border-radius: 4px;
+  margin-top: $padding_top;
+  h1 {
+    font-size: 2.2rem;
+    margin: 0;
+  }
+  .FQ_WRAPPER {
+    margin-bottom: 50px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background: #fff;
+    h2 {
+      font-size: 2rem;
+      padding: 15px;
+    }
+  }
+  .load_content {
+    span {
+      margin-top: 2rem;
+      display: inline-block;
+      vertical-align: middle;
+      padding-right: 1rem;
+    }
+  }
+}

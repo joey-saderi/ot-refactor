@@ -1,0 +1,29 @@
+.pelak_view_container {
+  width: 300px;
+  position: relative;
+  .forth {
+    position: absolute;
+    top: 15px;
+    right: 14px;
+    font-size: 1.8rem;
+  }
+  .third {
+    position: absolute;
+    top: 9px;
+    right: 55px;
+    font-size: 2rem;
+  }
+  .second {
+    position: absolute;
+    top: 6px;
+    right: 106px;
+    font-size: 2.3rem;
+  }
+  .first {
+    position: absolute;
+    width: 5rem;
+    left: 106px;
+    top: 9px;
+    font-size: 2rem;
+  }
+}

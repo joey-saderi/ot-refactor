@@ -1,0 +1,95 @@
+@import "../colors";
+.Homepage {
+  .banner {
+    height: 90vh;
+    background-image: url("/image/main_banner.jpg");
+    background-position: right center;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    h1 {
+      color: #fff;
+      font-size: 4rem;
+      font-weight: 900;
+      width: 100%;
+      margin: 0;
+      text-align: center;
+      text-shadow: $text_shadow;
+      padding-top: 14vh;
+      line-height: 1.7;
+    }
+    h2 {
+      text-shadow: $text_shadow;
+      font-weight: 300;
+      width: 100%;
+      color: #fff;
+      font-size: 2.1rem;
+      line-height: 1.5;
+      margin: 0px 0px 26px;
+      text-align: center;
+    }
+    .search_container {
+      width: 100%;
+      background-color: #fff;
+      border-radius: 0.4rem;
+      padding: 3.2rem;
+    }
+  }
+
+  .third_container {
+    box-shadow: $box_shadow;
+    background-color: #fff;
+    margin-top: 3rem;
+    padding: 1.5rem;
+    .RentPage_Dynamic_links {
+      ul {
+        column-count: 3;
+        margin: 8px 0px;
+        li {
+          a {
+            line-height: 1.5;
+            font-weight: 500;
+            transition: 0.25s;
+            font-size: 1.4rem;
+            color: $blue;
+            display: block;
+            &:hover {
+              padding-right: 0.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and(max-width:1024px) {
+  .Homepage {
+    .banner {
+      padding: 3.5rem 1.5rem 6.5rem;
+    }
+  }
+}
+
+@media screen and(max-width:720px) {
+  .Homepage {
+    .banner {
+      height: auto;
+      display: block;
+      background-position: left;
+      h1 {
+        margin: 0;
+        padding-top: 0vh;
+        font-size: 2.5rem;
+      }
+      h2 {
+        font-size: 1.4rem;
+      }
+      .search_container {
+        padding: 1.2rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "next_seo": {
+    "initial_title": "ثبت درخواست اجاره | اتولی",
+    "title": {
+      "start": "ثبت درخواست اجاره ",
+      "otoli": " | اتولی"
+    },
+    "description": "اتولی سامانه‌ای است برای اجاره خودرو به‌صورت آنلاین. با اتولی هم می‌توانید ماشین اجاره کنید و هم از اجاره ماشین خود کسب درآمد کنید.",
+    "site_name": "اتولی",
+    "handle": "@otoli_net",
+    "site": "@otoli_net",
+    "cardType": "summar,y_large_image"
+  },
+  "condition_and_cancellation": "شرایط اجاره و کنسلی",
+  "location": "محل تحویل",
+  "location_text": "در محدوده تهران، خودرو در محل شما تحویل می‌شود.",
+  "with_driver": "اجاره با راننده",
+  "with_driver_text": "اجاره این خودرو فقط، همراه با راننده امکان‌پذیر است",
+  "destination_limit": "محدودیت مسافت روزانه",
+  "km_per_day": "کیلومتر در روز",
+  "extra_price_per_km": "هزینه هر کیلومتر اضافه ",
+  "toman_1": " تومان",
+  "insurance_for_rent": "بیمه اجاره",
+  "time_for_rent": "مدت اجاره: ",
+  "day": "روز",
+  "rent": "اجاره ",
+  "toman": "تومان",
+  "discount_for": "تخفیف برای ",
+  "discount": "تخفیف",
+  "insurance": "بیمه",
+  "nothing": "ندارد",
+  "have_discount": "کد تخفیف دارید؟",
+  "discount_place_holder": "کد تخفیف خود را وارد کنید",
+  "submit": "اعمال",
+  "coupon_code": "کد تخفیف",
+  "sum": "جمع کل",
+  "book": "ثبت درخواست",
+  "extra_text": "هزینه را بعد از پذیرش درخواست توسط مالک خودرو پرداخت خواهید کرد"
+}

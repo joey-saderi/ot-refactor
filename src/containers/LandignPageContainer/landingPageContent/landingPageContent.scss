@@ -1,0 +1,51 @@
+@import "../../../styles/colors";
+
+.landing_dynamic_content {
+  margin-top: 3rem;
+  box-shadow: $box_shadow;
+  background: #fff;
+  padding: 1.4rem;
+  h2 {
+    font-size: 1.8rem;
+  }
+  p {
+    font-size: 1.4rem;
+  }
+  .Landing_Links {
+    h3 {
+      margin-top: 2rem;
+    }
+    ul {
+      column-count: 3;
+      margin: 8px 0px;
+      li {
+        a {
+          line-height: 1.5;
+          font-weight: 500;
+          font-size: 1.4rem;
+          color: $blue;
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .landing_dynamic_content {
+    .Landing_Links {
+      ul {
+        column-count: 2;
+      }
+    }
+  }
+}
+@media (max-width: 480px) {
+  .landing_dynamic_content {
+    .Landing_Links {
+      ul {
+        column-count: 1;
+      }
+    }
+  }
+}
